@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Contact.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>Contact</title>
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <a href="#"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+            </ul>
+        </nav>
+        <div class="links">
+            <a href="#" title="Instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="#" title="Twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" title="Institution Force"><i class='bx bxs-institution'></i></a>
+            <a href="https://github.com/SilvaLimaAmanda1" target="_blank" rel="noopener" title="Github"><i class='bx bxl-github'></i></a>
+        </div>
+    </header>
+    <div class="formContact">
+    	<form action="#" method="post" enctype="multipart/form-data">
+    		<label>
+    			<span><i class='bx bxs-user-circle'></i></i>Name</span>
+    			<input type="text" name="name" required="">
+    		</label>
+    		<label>
+    			<span><i class='bx bxs-envelope'></i>Email</span>
+    			<input type="text" name="email" class="fade_85">
+    		</label>
+    		<label>
+    			<span><i class='bx bxs-flag-alt'></i>Subject</span>
+    			<input type="text" name="subject" required="">
+    		</label>
+    		<label>
+    			<span><i class='bx bxs-message-square-dots'></i>message</span>
+    			<textarea name="message" rows="3" required=""></textarea>
+    		</label>
+    		<input type="hidden" name="action" value="send Message">
+    		<button class="btn-send" title="send Message"><i class='bx bx-paper-plane'></i>Send Message</button>
+    	</form>
+    </div>	
+
+     <footer>
+       <p>&copy; 2024 Amanda Silva | AS, All rights reserved</p>
+    </footer>
+</body>
+</html>

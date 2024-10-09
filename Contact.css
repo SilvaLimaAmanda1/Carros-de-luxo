@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Syne", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    background: #fffafa;
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(1px 1px #84d1de);
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 90px;
+    line-height: 80px;
+    z-index: 10001;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 10px 5px #84d1de;
+}
+
+/* Botão de contato */
+.btn a {
+    background-color: #84d1de;
+    border: none;
+    color: white;
+    padding: 2px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.btn a:hover {
+    transform: rotate(360deg);
+}
+
+/* Links de navegação */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    border-bottom: 2.5px solid #7f00ff;
+    border-radius: 5px;
+}
+
+/* Ícones de links sociais */
+.links i {
+    color: white;
+    width: 50px;
+    font-size: 30px;
+    margin: 25px 10px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    border-radius: 3%;
+    border-bottom: 2.5px solid #2e657c;
+}
+/*CONFIGURAÇÃO DO FORMULARIO*/
+.formContact{
+    max-width: 600px;
+    height: auto;
+    float: none;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 1em;
+    border-radius: 6px;
+    background-color: #333;
+    box-shadow: 5px 10px 5px #84d1de;
+    position: relative;
+}
+.formContact label{
+    float: left;
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 1.2em;
+}
+.formContact label span{
+    width: 100%;
+    float: left;
+    color: #999;
+    margin-bottom: 6px;
+    font-family: 'Open_sansregular';
+}
+.formContact label input{
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Open_sansregular';
+    outline: none;
+    border: 1px solid #dee5ed;
+    border-radius: 4px;
+    padding: 0.6em;
+    transition: 0.3s;
+}
+.formContact label select{
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+}
+.formContact label textarea{
+    font-size: 1em;
+    color: #555;
+    border: 1px solid #dee5ed;
+    border-radius: 4px;
+    padding: 0.6em;
+    outline: none;
+    transition: 0.3s;
+}
+.formContact label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formContact label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formContact label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+
+.formContact button.btn-send{
+    background-color: white;
+    width: 100%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    padding: 0.8em 0em;
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    transition: 0.3s;
+}
+.formContact button.btn-send:hover{
+    background-color: #84d1de;
+}
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: black;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 20px;
+    color: white;
+}
+
+/* Customização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FEF0F0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 822px) {
+    /* Ajustes no logo */
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+    /* Ajustes nos links de navegação */
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Ajustes nas seções */
+    .home, .two {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustes nas caixas de texto e imagem */
+    .home-box-img, .two-box-img {
+        justify-content: center;
+    }
+}
